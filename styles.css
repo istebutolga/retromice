@@ -12,6 +12,13 @@ header {
     text-align: center;
 }
 
+#logo {
+    display: block;
+    margin: 0 auto; /* Ortalamak için */
+    width: 150px; /* Logo genişliği, isteğe göre ayarlayın */
+    height: auto; /* Yüksekliği otomatik ayarlamak için */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -106,6 +113,22 @@ form button {
 }
 
 form button:hover {
+    background-color: #45a049; /* Buton hover rengi */
+}
+
+/* İndirme ve Discord butonları */
+.download-button, .discord-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Buton arka plan rengi */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Buton geçişi */
+    margin-top: 10px;
+}
+
+.download-button:hover, .discord-button:hover {
     background-color: #45a049; /* Buton hover rengi */
 }
 
