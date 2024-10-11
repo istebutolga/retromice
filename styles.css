@@ -2,11 +2,11 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Arka plan rengi */
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #4CAF50; /* Başlık arka plan rengi */
+    background-color: #4CAF50;
     color: white;
     padding: 20px;
     text-align: center;
@@ -14,9 +14,9 @@ header {
 
 #logo {
     display: block;
-    margin: 0 auto; /* Ortalamak için */
-    width: 150px; /* Logo genişliği, isteğe göre ayarlayın */
-    height: auto; /* Yüksekliği otomatik ayarlamak için */
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
 }
 
 nav ul {
@@ -32,11 +32,15 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s; /* Renk geçişi */
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffeb3b; /* Hover rengi */
+    color: #ffeb3b;
+}
+
+main {
+    padding: 20px;
 }
 
 section {
@@ -44,35 +48,35 @@ section {
     margin: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: white; /* Bölüm arka plan rengi */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Gölgeler */
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #4CAF50; 
-    border-bottom: 2px solid #4CAF50; /* Başlık altı çizgi */
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
     padding-bottom: 10px;
 }
 
-.service {
+.service, .gallery {
     margin-bottom: 15px;
 }
 
 .gallery {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap; /* Taşma durumunda taşma */
+    flex-wrap: wrap;
 }
 
 .gallery img {
-    width: 100px; /* Galeri görsel boyutu */
+    width: 100px;
     height: auto;
     border-radius: 5px;
-    transition: transform 0.3s; /* Büyütme geçişi */
+    transition: transform 0.3s;
 }
 
 .gallery img:hover {
-    transform: scale(1.1); /* Hoverda büyütme efekti */
+    transform: scale(1.1);
 }
 
 footer {
@@ -109,41 +113,39 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Buton geçişi */
+    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #45a049; /* Buton hover rengi */
+    background-color: #45a049;
 }
 
-/* İndirme ve Discord butonları */
-.download-button, .discord-button {
+.button {
     display: inline-block;
-    background-color: #4CAF50; /* Buton arka plan rengi */
+    background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s; /* Buton geçişi */
+    transition: background-color 0.3s;
     margin-top: 10px;
 }
 
-.download-button:hover, .discord-button:hover {
-    background-color: #45a049; /* Buton hover rengi */
+.button:hover {
+    background-color: #45a049;
 }
 
-/* Duyarlı tasarım */
 @media (max-width: 768px) {
     nav ul li {
-        display: block; /* Mobilde dikey menü */
+        display: block;
         margin: 5px 0;
     }
 
     .gallery {
-        flex-direction: column; /* Galeri dikey düzen */
+        flex-direction: column;
     }
 
     .gallery img {
-        width: 90%; /* Mobilde daha büyük görsel boyutu */
+        width: 90%;
     }
 }
